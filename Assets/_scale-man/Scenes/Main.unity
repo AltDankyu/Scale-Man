@@ -543,7 +543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31551024}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.5, z: 15.7}
+  m_LocalPosition: {x: 0, y: 2.5, z: 8.29}
   m_LocalScale: {x: 10, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -637,7 +637,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94291452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -27.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1387,7 +1387,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328661407}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4, y: 1.9, z: 13.54}
+  m_LocalPosition: {x: 2.4, y: 1.9, z: 6.13}
   m_LocalScale: {x: 3, y: 3, z: 0.31}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3327,21 +3327,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sliderManager: {fileID: 377151740}
   playerModel: {fileID: 669853768}
-  scaleOfSmall: 0.1
-  scaleOfBig: 2
   rb: {fileID: 669853771}
-  minSpeed: 0.3
-  maxSpeed: 3
-  jumpForce: {x: 0, y: 100000, z: 10000}
-  jumpTime: 1
-  downTime: 1
-  blowForce: {x: 300, y: 300, z: 300}
-  blowTorque: {x: 300, y: 300, z: 300}
   animator: {fileID: 669853769}
   trailFx: {fileID: 3175573060760142174, guid: 701751e6b72fa704181cddcf3d3ad8f4, type: 3}
   hitFx: {fileID: 22676112156962456, guid: 1adc6c3950255cd4aa623725ae1b4db2, type: 3}
   landingFx: {fileID: 9118461879708635623, guid: 9fa5aee3d283e7643b3ab853ddd1354b, type: 3}
   hitFxPoint: {fileID: 235425359}
+  scaleOfSmall: 0.1
+  scaleOfBig: 2
+  minSpeed: 7
+  maxSpeed: 10
+  jumpForce: {x: 0, y: 100000, z: 10000}
+  jumpTime: 1
+  downTime: 1
+  blowForce: {x: 300, y: 300, z: 300}
+  blowTorque: {x: 300, y: 300, z: 300}
 --- !u!1 &697160818
 GameObject:
   m_ObjectHideFlags: 0
@@ -4021,7 +4021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 337856dbfa29aec48aac23633792ffb7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.98
+      value: 4.57
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 337856dbfa29aec48aac23633792ffb7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4144,8 +4144,8 @@ MonoBehaviour:
   scaleOfSmall: 0.1
   scaleOfBig: 2
   rb: {fileID: 759379171}
-  minSpeed: 0.3
-  maxSpeed: 3
+  minSpeed: 9
+  maxSpeed: 15
   jumpForce: {x: 0, y: 100000, z: 10000}
   jumpTime: 1
   downTime: 1
@@ -5225,7 +5225,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.07987654, y: -0.6118008, z: 0.057448793, w: 0.78486896}
-  m_LocalPosition: {x: 23.7, y: 11.11, z: 5.690001}
+  m_LocalPosition: {x: 23.7, y: 11.11, z: -22.289999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7675,7 +7675,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659739265}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4, y: 1.9, z: 13.54}
+  m_LocalPosition: {x: 2.4, y: 1.9, z: 6.13}
   m_LocalScale: {x: 3, y: 3, z: 0.31}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7842,7 +7842,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746001263}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4, y: 1.9, z: 13.54}
+  m_LocalPosition: {x: 2.4, y: 1.9, z: 6.13}
   m_LocalScale: {x: 3, y: 3, z: 0.31}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8442,7 +8442,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1827466008}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4, y: 1.9, z: 13.54}
+  m_LocalPosition: {x: 2.4, y: 1.9, z: 6.13}
   m_LocalScale: {x: 3, y: 3, z: 0.31}
   m_ConstrainProportionsScale: 0
   m_Children: []
