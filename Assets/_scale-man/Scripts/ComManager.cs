@@ -57,13 +57,69 @@ namespace ScaleMan
         /// </summary>
         private void Start()
         {
-            // 最初にスライダーを0.3にセットしておきます。
-            SetSliderValue(value: 0.1f);
 
-            // 0.5秒後に1秒間かけて0.8までスライダーを移動します。
-            SetSliderValueSmoothly(delay:2f, value: 0.8f, duration: 1f);
+            // COM4体用に、それぞれの場合分けをして、COMの挙動を制御しています。
 
-            // 以下、何秒後に何秒かけてどの値までスライダーを移動するか、というように指定していきます...
+            if(this.gameObject.name == "COM_Red")
+            {
+                // 最初にスライダーを0.1にセットしておきます。
+                SetSliderValue(value: 0.1f);
+
+                // 2秒後に1秒間かけて0.8までスライダーを移動します。
+                SetSliderValueSmoothly(delay:1f, value: 0.8f, duration: 0.5f);
+
+                // スタートから4秒後に0.2秒間かけて0.1までスライダーを移動します。
+                SetSliderValueSmoothly(delay:4f, value: 0.1f, duration: 0.2f);
+
+                // スタートから7秒後に1秒間かけて0.8までスライダーを移動します。
+                SetSliderValueSmoothly(delay:8f, value: 0.8f, duration: 1f);
+
+                // 以下、何秒後に何秒かけてどの値までスライダーを移動するか、というように指定していきます...
+            }
+
+            else if(this.gameObject.name == "COM_Green")
+            {
+                // 最初にスライダーを0.1にセットしておきます。
+                SetSliderValue(value: 0.1f);
+
+                // 2秒後に1秒間かけて0.8までスライダーを移動します。
+                SetSliderValueSmoothly(delay:1f, value: 0.8f, duration: 0.5f);
+
+                // スタートから4秒後に0.2秒間かけて0.1までスライダーを移動します。
+                SetSliderValueSmoothly(delay:4f, value: 0.1f, duration: 0.2f);
+
+                // スタートから7秒後に1秒間かけて0.8までスライダーを移動します。
+                SetSliderValueSmoothly(delay:8f, value: 0.8f, duration: 1f);
+
+                // 以下、何秒後に何秒かけてどの値までスライダーを移動するか、というように指定していきます...
+            }
+
+            else if(this.gameObject.name == "COM_Orange")
+            {
+                // 最初にスライダーを0.1にセットしておきます。
+                SetSliderValue(value: 0.1f);
+
+                // 2秒後に1秒間かけて0.8までスライダーを移動します。
+                SetSliderValueSmoothly(delay:2f, value: 0.8f, duration: 1f);
+
+                // スタートから4秒後に0.2秒間かけて0.1までスライダーを移動します。
+                SetSliderValueSmoothly(delay:4f, value: 0.1f, duration: 0.2f);
+
+                // スタートから7秒後に1秒間かけて0.8までスライダーを移動します。
+                SetSliderValueSmoothly(delay:7f, value: 0.8f, duration: 1f);
+
+                // 以下、何秒後に何秒かけてどの値までスライダーを移動するか、というように指定していきます...
+            }
+
+            else
+            {
+                // 最初にスライダーを0.1にセットしておきます。
+                SetSliderValue(value: 0.1f);
+            }
+
+
+
+
         }
 
         public void InvokeAfterDelay(float delay, Action action)
