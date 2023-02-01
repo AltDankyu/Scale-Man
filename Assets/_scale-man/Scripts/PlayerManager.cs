@@ -89,17 +89,17 @@ namespace ScaleMan
                 }
             }
 
-            /*
+            
             else if (collision.gameObject.name == "Broke Cube")
             {
-                if (sliderManager.GetValue() >= 0.6f)
+                if (sliderManager.GetValue() >= 0.5f)
                 {
-                    collision.rigidbody.mass = 1;
-                    collision.rigidbody.AddForce(blowForce);
+                    collision.rigidbody.mass = 100;
+                    collision.rigidbody.AddForce(blowForce, ForceMode.Impulse);
                     collision.rigidbody.AddTorque(blowTorque);
                 }
             }
-            */
+            
         }
 
         private IEnumerator PlayLandingFxCoroutine(float delay)

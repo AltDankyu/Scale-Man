@@ -82,14 +82,14 @@ namespace ScaleMan
                 // 最初にスライダーを0.1にセットしておきます。
                 SetSliderValue(value: 0.1f);
 
-                // 2秒後に1秒間かけて0.8までスライダーを移動します。
+                // 1秒後に0.5秒間かけて0.8までスライダーを移動します。
                 SetSliderValueSmoothly(delay:1f, value: 0.8f, duration: 0.5f);
 
                 // スタートから4秒後に0.2秒間かけて0.1までスライダーを移動します。
                 SetSliderValueSmoothly(delay:4f, value: 0.1f, duration: 0.2f);
 
                 // スタートから7秒後に1秒間かけて0.8までスライダーを移動します。
-                SetSliderValueSmoothly(delay:8f, value: 0.8f, duration: 1f);
+                SetSliderValueSmoothly(delay:9f, value: 0.8f, duration: 1f);
 
                 // 以下、何秒後に何秒かけてどの値までスライダーを移動するか、というように指定していきます...
             }
@@ -105,8 +105,12 @@ namespace ScaleMan
                 // スタートから4秒後に0.2秒間かけて0.1までスライダーを移動します。
                 SetSliderValueSmoothly(delay:4f, value: 0.1f, duration: 0.2f);
 
-                // スタートから7秒後に1秒間かけて0.8までスライダーを移動します。
-                SetSliderValueSmoothly(delay:7f, value: 0.8f, duration: 1f);
+                // スタートから9秒後に1秒間かけて0.8までスライダーを移動します。
+                SetSliderValueSmoothly(delay:9f, value: 0.8f, duration: 1f);
+
+                // スタートから9秒後に1秒間かけて0.8までスライダーを移動します。
+                SetSliderValueSmoothly(delay:10.5f, value: 0.1f, duration: 0.5f);
+                    
 
                 // 以下、何秒後に何秒かけてどの値までスライダーを移動するか、というように指定していきます...
             }
@@ -155,17 +159,17 @@ namespace ScaleMan
                 }
             }
 
-            /*
+            
             else if (collision.gameObject.name == "Broke Cube")
             {
-                if (_sliderValue >= 0.6f)
+                if (_sliderValue >= 0.5f)
                 {
                     collision.rigidbody.mass = 1;
                     collision.rigidbody.AddForce(blowForce);
                     collision.rigidbody.AddTorque(blowTorque);
                 }
             }
-            */
+            
         }
 
         private IEnumerator PlayLandingFxCoroutine(float delay)
