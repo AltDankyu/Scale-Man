@@ -14,14 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedAppIndex: 0
   clientTokens:
-  - fb03e5b8136262bdb339459620bb3287
   - 
   appIds:
   - 1324955434957502
-  - 0
   appLabels:
   - Switch Your Scale
-  - New App
   cookie: 1
   logging: 1
   status: 1
@@ -30,7 +27,6 @@ MonoBehaviour:
   androidKeystorePath: 
   iosURLSuffix: 
   appLinkSchemes:
-  - list: []
   - list: []
   uploadAccessToken: 
   autoLogAppEventsEnabled: 1

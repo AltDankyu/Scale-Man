@@ -42,7 +42,17 @@ namespace ScaleMan
             {
                 var position = handle.transform.position;
 
-                position.x = Input.mousePosition.x;
+                if (Application.isEditor == true)
+                {
+                    position.x = Input.mousePosition.x;
+                }
+                else
+                {
+                    if (Input.touchCount > 0)
+                    {
+                        position.x = Input.GetTouch(0).position.x;
+                    }
+                }
 
                 if (position.x < startPosition.position.x)
                 {
